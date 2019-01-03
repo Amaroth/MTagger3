@@ -5,8 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MTagger3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MTagger 3.0 dev" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Column="0">
+            <MenuItem Header="_File">
+                <MenuItem Name="NewFileMenuItem" Header="_New"/>
+                <MenuItem Name="OpenFileMenuItem" Header="_Open"/>
+                <MenuItem Name="SaveFileMenuItem" Header="_Save"/>
+                <MenuItem Name="LoadFileMenuItem" Header="_Load"/>
+            </MenuItem>
+            <MenuItem Header="_About"/>
+        </Menu>
+
+        <TabControl Grid.Row="1">
+            <TabItem Header="Play">
+                
+            </TabItem>
+            <TabItem Header="Manage groups">
+                
+            </TabItem>
+            <TabItem Header="Manage environments">
+                
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
