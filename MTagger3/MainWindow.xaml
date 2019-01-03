@@ -25,15 +25,53 @@
             <MenuItem Header="_About"/>
         </Menu>
 
+        
+        
         <TabControl Grid.Row="1">
             <TabItem Header="Play">
-                
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="50*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <DockPanel Grid.Column="0">
+                        <DockPanel DockPanel.Dock="Top">
+                            <Button DockPanel.Dock="Right" Content="S" Name="SearchButton"  Width="20" HorizontalAlignment="Right"/>
+                            <TextBox Name="SearchTextBox"/>
+                        </DockPanel>
+                        <ListView Name="EnvironmentListView"></ListView>
+                    </DockPanel>
+
+                    <StackPanel Grid.Column="1" Name="RepeatablesStackPanel"/>
+
+                    <DockPanel Grid.Column="2">
+                        <WrapPanel Name="EnvSinglesStackPanel" Orientation="Horizontal" DockPanel.Dock="Top"/>
+                        <WrapPanel Name="GlobalSinglesStackPanel" Orientation="Horizontal"/>
+                    </DockPanel>
+                </Grid>
             </TabItem>
+            
+            
+            
             <TabItem Header="Manage groups">
                 
             </TabItem>
+            
+            
+            
             <TabItem Header="Manage environments">
                 
+            </TabItem>
+
+
+
+            <TabItem Header="Manage single sounds">
+
             </TabItem>
         </TabControl>
     </Grid>
