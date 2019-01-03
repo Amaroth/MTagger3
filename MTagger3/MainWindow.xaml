@@ -13,6 +13,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
 
         <Menu Grid.Column="0">
@@ -31,9 +32,11 @@
             <TabItem Header="Play">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="15*"/>
+                        <ColumnDefinition Width="15*"/>
                         <ColumnDefinition Width="50*"/>
                         <ColumnDefinition Width="30*"/>
+                        <ColumnDefinition Width="15*"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
@@ -47,12 +50,16 @@
                         <ListView Name="EnvironmentListView"></ListView>
                     </DockPanel>
 
-                    <StackPanel Grid.Column="1" Name="RepeatablesStackPanel"/>
+                    <StackPanel Grid.Column="1" Name="PresetsStackPanel"/>
 
-                    <DockPanel Grid.Column="2">
+                    <StackPanel Grid.Column="2" Name="RepeatablesStackPanel"/>
+
+                    <DockPanel Grid.Column="3">
                         <WrapPanel Name="EnvSinglesStackPanel" Orientation="Horizontal" DockPanel.Dock="Top"/>
                         <WrapPanel Name="GlobalSinglesStackPanel" Orientation="Horizontal"/>
                     </DockPanel>
+
+                    <StackPanel Grid.Column="4" Name="NowPlayingStackPanel"/>
                 </Grid>
             </TabItem>
             
@@ -74,5 +81,12 @@
 
             </TabItem>
         </TabControl>
+
+
+
+        <DockPanel Grid.Row="2">
+            <Button>Play/Pause</Button>
+            <Slider Name="MasterVolumeSlider" VerticalAlignment="Center" Minimum="0" Maximum="100" Value="50" SmallChange="1"/>
+        </DockPanel>
     </Grid>
 </Window>
