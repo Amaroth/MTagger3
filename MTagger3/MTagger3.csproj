@@ -59,6 +59,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="Core\Environment.cs" />
+    <Compile Include="Core\Library.cs" />
+    <Compile Include="Core\PlayMode.cs" />
+    <Compile Include="Core\Preset.cs" />
+    <Compile Include="Core\SoundFile.cs" />
+    <Compile Include="Core\SoundGroup.cs" />
     <Compile Include="GUI\App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -97,8 +103,6 @@
   <ItemGroup>
     <Content Include="Libs\Interop.MediaPlayer.dll" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Core\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
