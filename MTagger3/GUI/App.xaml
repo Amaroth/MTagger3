@@ -1,8 +1,7 @@
-﻿<Application x:Class="MTagger3.App"
+﻿<Application x:Class="MTagger3.GUI.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:MTagger3"
-             StartupUri="MainWindow.xaml">
+             Startup="Application_Startup">
     <Application.Resources>
          
     </Application.Resources>

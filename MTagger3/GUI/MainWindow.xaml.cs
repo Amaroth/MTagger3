@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MTagger3
+namespace MTagger3.GUI
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
